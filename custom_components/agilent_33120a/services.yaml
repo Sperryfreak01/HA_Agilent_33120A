@@ -1,0 +1,28 @@
+send_raw_scpi:
+  name: Send Raw SCPI
+  description: >
+    Send a raw SCPI command to the function generator. Use for features
+    the integration does not model (AM/FM, sweep, burst, arbitrary
+    waveform management, *SAV/*RCL, etc).
+  fields:
+    command:
+      name: Command
+      description: A single SCPI command, no terminating newline.
+      example: "APPL:SIN 1E3, 2.0, 0"
+      required: true
+      selector:
+        text:
+
+query_raw_scpi:
+  name: Query Raw SCPI
+  description: >
+    Send a raw SCPI query and return its response as an
+    agilent_33120a.query_response event.
+  fields:
+    command:
+      name: Query
+      description: "A SCPI query ending with '?'."
+      example: "SYST:VERS?"
+      required: true
+      selector:
+        text:

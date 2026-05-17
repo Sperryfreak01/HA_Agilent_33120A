@@ -1,0 +1,10 @@
+{
+  "domain": "agilent_33120a",
+  "name": "Agilent 33120A Function Generator",
+  "version": "0.1.0",
+  "documentation": "https://github.com/mattlovett-spb/agilent_33120a",
+  "iot_class": "local_polling",
+  "config_flow": true,
+  "requirements": [],
+  "codeowners": ["@mattlovett-spb"]
+}

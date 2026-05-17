@@ -1,0 +1,24 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Agilent 33120A Function Generator",
+        "description": "Connect to the ESPHome serial proxy.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "termination": "Output Termination",
+          "poll_interval": "Poll Interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect — check host and port.",
+      "no_response_check_baud_and_cable": "No response from instrument — check baud rate (1200 8N2) and cable.",
+      "wrong_device": "Connected but did not find a 33120A. Check you have the right proxy."
+    },
+    "abort": {
+      "already_configured": "This instrument (host:port) is already configured."
+    }
+  }
+}
